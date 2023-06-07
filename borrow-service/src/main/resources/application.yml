@@ -1,0 +1,15 @@
+server:
+  port: 8301
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/cloud_study?charset=utf8
+    username: root
+    password: 666
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: borrow-service
+eureka:
+  client:
+    # 跟上面一样，需要指向Eureka服务端地址，这样才能进行注册
+    service-url:
+      defaultZone: http://localhost:8888/eureka
